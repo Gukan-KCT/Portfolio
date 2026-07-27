@@ -1,0 +1,470 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.body {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.personalImage {
+    display: flex;
+    max-width: 460px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 15px;
+    flex-grow: 2;
+    transition: 0.4s ease-in;
+}
+
+.personalImage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 21px;
+}
+
+.content {
+    margin: 15px auto;
+    padding: 5px;
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+    gap: 50px;
+    transition: 0.3s;
+}
+
+.click,
+.grid {
+    text-decoration: none;
+    max-width: 450px;
+    width: calc(50% - 15px);
+    height: 250px;
+    height: auto;
+    margin: 0;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: stretch;
+}
+
+.card,
+.herocard {
+    padding: 30px 20px;
+    display: flex;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(19, 16, 16, 0.1);
+    border-radius: 18px;
+    border: 2px solid white;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 2;
+    margin: 0;
+}
+
+.card h1 {
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.herocard {
+    flex-direction: column;
+    border: 2px solid greenyellow;
+}
+
+.card:hover {
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    transform: scale(1.02);
+    background-color: rgba(255, 255, 0, 0.8);
+}
+
+.card:hover h1 {
+    color: black;
+    transition: color 450ms ease-in-out;
+}
+
+
+.herocard h1,
+h2 {
+    color: greenyellow;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+
+/* For about me page */
+
+
+.aboutme-title h1 {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.aboutme-content {
+
+    padding: 20px;
+    margin: 15px;
+    display: flex;
+    max-width: 900px;
+    width: 40%;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.aboutme-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-grow: 2;
+    align-items: center;
+}
+
+.aboutme-container p {
+    font-weight: bolder;
+    font-size: large;
+    padding: 20px;
+    margin-left: 5%;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+}
+
+.web-app {
+    color: lightpink;
+}
+
+.name {
+    color: goldenrod;
+}
+
+.degree {
+    color: dodgerblue;
+}
+
+.iQube {
+    color: cyan;
+}
+
+.vanaraj {
+    color: navajowhite;
+}
+
+
+
+.skills h2 {
+    color: white;
+    background-color: gold;
+    font-weight: 400;
+    border-radius: 18px;
+}
+
+.skills ol {
+    list-style-type: disc;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+.skills li {
+    font-weight: bold;
+    line-height: 1.7;
+}
+
+
+/* For My Portfolio page */
+
+
+.Portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.portfolio-container {
+    padding: 30px;
+    margin: 40px;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(128, 128, 128, 0.1);
+    width: 70%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border-radius: 20px;
+    flex-direction: row;
+}
+
+
+.box {
+    padding: 10px;
+    display: flex;
+    background-color: rgba(0, 255, 255, 0.819);
+    max-width: 280px;
+    width: 100%;
+    height: 250px;
+    flex-grow: 1;
+    margin: 15px;
+    border-radius: 10px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.box:hover {
+    background-color: gold;
+    transition: 0.8 ease-in-out;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.box-content {
+    position: relative;
+    display: flex;
+    z-index: 2;
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.default-text {
+    position: absolute;
+    color: black;
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.hover-text {
+    color: black;
+    position: absolute;
+    transform: translateY(30px);
+    font-weight: bolder;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+.box:hover .default-text {
+    opacity: 0;
+}
+
+.box:hover .hover-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Portfolio-click {
+    text-decoration: none;
+    max-width: 450px;
+    min-width: 280px;
+    width: calc(30% - 15px);
+    height: 250px;
+    height: auto;
+    margin: 0;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+/* For Contact me page */
+
+
+.aboutme-ME {
+    color: indianred;
+}
+
+.aboutme-title h1 {
+    font-weight: bolder;
+    font-size: 33px;
+}
+
+.contactme-box {
+    padding: 30px;
+    margin: 50px;
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(128, 128, 128, 0.1);
+    width: 20% auto;
+    max-width: 380px;
+    height: auto;
+    /* justify-content: space-between; */
+    align-items: center;
+    align-content: center;
+    border-radius: 20px;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.contactme-box h3 {
+    line-height: 15px;
+    text-align: left;
+    flex-basis: 90%;
+    padding: 15px;
+    margin: 10px;
+    color: mediumslateblue;
+}
+
+.contactme-box p {
+
+    padding: 5px;
+    margin-left: 19px;
+    margin-bottom: 3px;
+    padding-top: 2px;
+    padding-bottom: 15px;
+    display: flex;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.images img 
+{
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    margin: 5px;
+}
+
+images a 
+{
+    text-decoration: none;
+}
+
+.contactme-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items:center; */
+    align-content: center;
+    width: 100% auto;
+    max-width: 1900px;
+}
+
+.contactme-details
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    /* align-content: center; */
+    max-width: 500px;
+    width: auto;
+    /* height: auto; */
+    /* background-color: rgb(65, 64, 63); */
+    padding: 20px;
+    margin: 60px;
+    flex-grow: 1;
+}
+
+
+.contactme-details form
+{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.contactme-details td
+{
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(255, 255, 255,0.2);
+}
+
+.contactme-details input
+{
+    border: none;
+    /* border-color: white; */
+    padding: 15px;
+    background-color: black;
+    text-decoration: none;
+    margin-left: 50px;
+    
+}
+
+.contactme-details input::placeholder
+{
+    color: rgb(243, 240, 240,0.3);
+    /* padding: 50px; */
+    text-align: center  ;
+    /* margin-left: 0px; */
+    
+}
+
+.contactme-input
+{
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20% ;
+}
+
+.contactme-details label
+{
+    left: 0px;
+}
+
+.contactme-details table
+{
+    
+}
