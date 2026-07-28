@@ -391,8 +391,9 @@ images a
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    /* align-items:center; */
+    /* justify-content: space-between; */
+    padding: 5px;
+    align-items:center;
     align-content: center;
     width: 100% auto;
     max-width: 1900px;
@@ -402,16 +403,18 @@ images a
 {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     /* align-content: center; */
-    max-width: 500px;
-    width: auto;
+    max-width: 800px;
+    width: 100%;
     /* height: auto; */
     /* background-color: rgb(65, 64, 63); */
     padding: 20px;
     margin: 60px;
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    flex-direction: column;
+    /* background-color: red; */
 }
 
 
@@ -428,43 +431,65 @@ images a
     padding-top: 50px;
     padding-left: 20px;
     padding-bottom: 5px;
+    padding-right: 30px;
     border-bottom: 1px solid rgb(255, 255, 255,0.2);
 }
 
 .contactme-details input
 {
     border: none;
-    /* border-color: white; */
+    
     padding: 15px;
     background-color: black;
     text-decoration: none;
     margin-left: 50px;
+    
     
 }
 
 .contactme-details input::placeholder
 {
     color: rgb(243, 240, 240,0.3);
-    /* padding: 50px; */
-    text-align: center  ;
-    /* margin-left: 0px; */
-    
+    border-radius: 10px;
 }
 
-.contactme-input
+
+.contactme-details button
 {
-    
+    width: 30%;
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contactme-details button:hover
+{
+    cursor: pointer;
+    background-color: rgb(101, 101, 185);
+}
+
+.contactme-details input
+{
+    color: white;
+}
+
+.contactme-details textarea::placeholder
+{
+    color: rgb(243, 240, 240,0.3);
+    border-radius: 10px;
+}
+
+.contactme-details textarea
+{
+    background-color: black;
+    border: none;
     display: flex;
-    flex-wrap: wrap;
-    margin-right: 20% ;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    padding: 10px;
+    color: white;
 }
 
-.contactme-details label
-{
-    left: 0px;
-}
-
-.contactme-details table
-{
-    
-}
